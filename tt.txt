@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Sound</title>
+    <style>
+        /* Reset margin and padding to ensure full screen */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents scrolling */
+        }
+
+        /* Make the image fill the entire screen */
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the screen while maintaining aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <img src="Main seating area Ekaa.webp" alt="Restaurant_Image">
+    <audio autoplay loop>
+        <source src="restaurant-ambience-24720.mp3" type="audio/mp3">
+        <source src="restaurant-ambience-24720.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
